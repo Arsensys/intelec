@@ -160,7 +160,7 @@
                 <div class="row">
                     <div class="col l4 s12">
                         <h5 class="white-text">Instituto Tecnol&oacute;gico  de  Electr&oacute;nica</h5>
-                        <p class="grey-text text-lighten-4">Proyectos y productos tecnol&oacute;gicos.</p>
+                        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
                     </div>
                     <div class="col l4 s12 center-align">
                         <h5 class="white-text">Enlaces</h5>
@@ -200,7 +200,8 @@
                         </div>      
                         <div class="row">
                             <div class="input-field col s12 m8 offset-m2 l6 offset-l3">
-                                <select id="perfil">
+                                <select>
+                                    <option value="">Seleccione el Perfil</option>
                                     <option value="1">Estandar</option>
                                     <option value="2">Administrador</option>
                                 </select>
@@ -212,7 +213,7 @@
             </div>
             <div class="modal-footer">
                 <a href="#!" class="modal-action modal-close waves-effect waves-green btn red">Cancelar</a>
-                <a id="usertype" href="main-user.html" class="modal-action waves-effect waves-green btn green">Ingresar</a>
+                <a href="#!" class="modal-action waves-effect waves-green btn green">Ingresar</a>
             </div>
         </div>
 
@@ -267,14 +268,6 @@
                 $(".button-collapse").sideNav();
                 $('.modal').modal();
                 $('select').material_select();
-                $("#perfil").change(function() {
-                    if ($(this).val() === "1") {
-                        $("#usertype").attr("href", "main-user.html");
-                    } else {
-                        $("#usertype").attr("href", "main-admin.html");
-                    }
-
-                });
             });
         </script>
     </body>
