@@ -16,30 +16,24 @@
         </style>
     </head>
     <body>
-        <ul id="dropdown1" class="dropdown-content">
-            <li><a class="modal-trigger" href="#mlogin">Iniciar sesi&oacute;n</a></li>
-            <li><a class="modal-trigger" href="#msignin">Registrarse</a></li>
-            <li class="divider"></li>
-        </ul>
         <div class="navbar-fixed">
-            <nav class="light-blue darken-4">
+            <nav class="blue-grey darken-2">
                 <div class="nav-wrapper">
                     <a href="index.html" class="brand-logo">&nbsp;&nbsp;Intelec</a>
                     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="index.html"><i class="medium material-icons">home</i></a></li>
-                        <li><a href="lista-proyectos.html">Proyectos</a></li>
-                        <li><a href="lista-productos.html">Productos</a></li>
-                        <li><a href="acercade.html">Sobre Nosotros</a></li>
-                        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Ingresar<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a href="main-user.html"><i class="medium material-icons">home</i></a></li>
+                        <li><a href="usuarios-proyectos.html">Proyectos</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="user-acercade.html">Sobre Nosotros</a></li>
+                        <li><a class="modal-trigger" href="index.html">Cerrar sesi&oacute;n</a></li>
                     </ul>
                     <ul class="side-nav" id="mobile-demo">
-                        <li><a href="index.html"><i class="medium material-icons">home</i></a></li>
-                        <li><a href="lista-proyectos.html">Proyectos</a></li>
-                        <li><a href="lista-productos.html">Productos</a></li>
-                        <li><a href="acercade.html">Sobre Nosotros</a></li>
-                        <li><a class="modal-trigger" href="#mlogin">Iniciar sesi&oacute;n</a></li>
-                        <li><a class="modal-trigger" href="#msignin">Registrarse</a></li>
+                        <li><a href="main-user.html"><i class="medium material-icons">home</i></a></li>
+                        <li><a href="usuarios-proyectos.html">Proyectos</a></li>
+                        <li><a href="badges.html">Productos</a></li>
+                        <li><a href="user-acercade.html">Sobre Nosotros</a></li>
+                        <li><a class="modal-trigger" href="index.html">Cerrar sesi&oacute;n</a></li>
                     </ul>
                 </div>
             </nav>
@@ -63,9 +57,10 @@
                                     <p>Este proyecto prentende impulsar el desarrollo de dispositivos que
                                         realicen tareas automatizadas tanto en casa como en empresas.</p>
                                 </div>
-                                <div class="card-action">
+                                <div class="card-action center-align">
                                     <a class="btn modal-trigger green" href="#proinfo">Ver</a>
-                                    <a class='dropdown-button btn orange right' href='#' data-activates='share1'>Compartir!</a>
+                                    <a class="btn modal-trigger pink darken-3" href="#donar">Donar</a>
+                                    <a class='dropdown-button btn orange' href='#' data-activates='share1'><i class="material-icons">share</i></a>
                                     <!-- Dropdown Structure -->
                                     <ul id='share1' class='dropdown-content'>
                                         <li><a class="blue-text" href="#!"><img src="img/facebook.png" alt="" class="circle"> Facebook</a></li>
@@ -87,9 +82,10 @@
                                         objetivo socializar e implmentar tecnicas de seguridad para el manejo de datos en internet.
                                     </p>
                                 </div>
-                                <div class="card-action">
+                                <div class="card-action center-align">
                                     <a class="btn modal-trigger green" href="#proinfo">Ver</a>
-                                    <a class='dropdown-button btn orange right' href='#' data-activates='share2'>Compartir!</a>
+                                    <a class="btn modal-trigger pink darken-3" href="#donar">Donar</a>
+                                    <a class='dropdown-button btn orange' href='#' data-activates='share2'><i class="material-icons">share</i></a>
                                     <!-- Dropdown Structure -->
                                     <ul id='share2' class='dropdown-content'>
                                         <li><a class="blue-text" href="#!"><img src="img/facebook.png" alt="" class="circle"> Facebook</a></li>
@@ -111,9 +107,10 @@
                                         electrodomesticos enlazados a internet.
                                     </p>
                                 </div>
-                                <div class="card-action">
+                                <div class="card-action center-align">
                                     <a class="btn modal-trigger green" href="#proinfo">Ver</a>
-                                    <a class='dropdown-button btn orange right' href='#' data-activates='share3'>Compartir!</a>
+                                    <a class="btn modal-trigger pink darken-3" href="#donar">Donar</a>
+                                    <a class='dropdown-button btn orange' href='#' data-activates='share3'><i class="material-icons">share</i></a>
                                     <!-- Dropdown Structure -->
                                     <ul id='share3' class='dropdown-content'>
                                         <li><a class="blue-text" href="#!"><img src="img/facebook.png" alt="" class="circle"> Facebook</a></li>
@@ -158,30 +155,38 @@
                 </div>
             </div>
         </footer>
-        <div id="mlogin" class="modal">
+        <div id="donar" class="modal">
             <div class="modal-content center-align">
-                <h3 class="blue-text darken-3">Iniciar sesi&oacute;n:</h3>
+                <h3 class="blue-text darken-3">Hacer una donaci&oacute;n</h3>
                 <div class="row">
                     <form class="col s12">               
                         <div class="row">
                             <div class="input-field col s12 m8 offset-m2 l6 offset-l3">
-                                <input id="usuario" type="text" class="validate">
-                                <label for="usuario">Usuario</label>
+                                <select id="perfil">
+                                    <option value="1">Sistemas Domoticos</option>
+                                    <option value="2">Dispositivos de Control</option>
+                                    <option value="3">Seguridad en la Nube</option>
+                                    <option value="3">Juventud Tecnologica</option>
+                                    <option value="3">Sistemas de Sensores</option>
+                                    <option value="3">Proyecto OMICRON X</option>
+                                </select>
+                                <label>Nombre proyecto</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12 m8 offset-m2 l6 offset-l3">
-                                <input id="password" type="password" class="validate">
-                                <label for="password">Password</label>
+                                <input id="password" type="text" class="validate">
+                                <label for="password">Valor</label>
                             </div>
                         </div>      
                         <div class="row">
                             <div class="input-field col s12 m8 offset-m2 l6 offset-l3">
                                 <select id="perfil">
-                                    <option value="1">Estandar</option>
-                                    <option value="2">Administrador</option>
+                                    <option value="1">Consignacion</option>
+                                    <option value="2">Tarjeta de credito</option>
+                                    <option value="2">Tarjeta debito</option>
                                 </select>
-                                <label>Perfil</label>
+                                <label>Modo de pago</label>
                             </div>
                         </div>
                     </form>
@@ -189,51 +194,7 @@
             </div>
             <div class="modal-footer">
                 <a href="#!" class="modal-action modal-close waves-effect waves-green btn red">Cancelar</a>
-                <a id="usertype" href="main-user.html" class="modal-action waves-effect waves-green btn green">Ingresar</a>
-            </div>
-        </div>
-
-        <div id="msignin" class="modal">
-            <div class="modal-content center-align">
-                <h3 class="blue-text darken-3">Registrarse:</h3>
-                <div class="row">
-                    <form class="col s12">      
-                        <div class="row">
-                            <div class="input-field col s12 m6 l6">
-                                <input id="nombres" type="text" class="validate">
-                                <label for="nombres">Nombres</label>
-                            </div>
-                            <div class="input-field col s12 m6 l6">
-                                <input id="apellidos" type="text" class="validate">
-                                <label for="apellidos">Apellidos</label>
-                            </div>
-                        </div> 
-                        <div class="row">
-                            <div class="input-field col s12 m6 l6">
-                                <input id="usuario" type="text" class="validate">
-                                <label for="usuario">Usuario</label>
-                            </div>
-                            <div class="input-field col s12 m6 l6">
-                                <input id="correo" type="text" class="validate">
-                                <label for="correo">Correo</label>
-                            </div>                         
-                        </div>  
-                        <div class="row">
-                            <div class="input-field col s12 m6 l6">
-                                <input id="password" type="password" class="validate">
-                                <label for="password">Clave</label>
-                            </div>
-                            <div class="input-field col s12 m6 l6">
-                                <input id="password2" type="password" class="validate">
-                                <label for="password2">Repetir clave</label>
-                            </div>
-                        </div>                      
-                    </form>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <a href="#!" class="modal-action modal-close waves-effect waves-green btn red">Cancelar</a>
-                <a href="main-user.html" class="modal-action waves-effect waves-green btn green">Continuar</a>
+                <a id="usertype" href="main-user.html" class="modal-action waves-effect waves-green btn  pink darken-3">Donar</a>
             </div>
         </div>
         <div id="proinfo" class="modal">

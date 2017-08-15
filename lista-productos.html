@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Proyectos</title>
+        <link rel="icon" href="img/icon.png" sizes="32x32">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+        <style>
+            #dropdown1,.dropdown-content{width: 200px !important;}
+            .text-justify{text-align: justify;}
+            .navbar-fixed{z-index: 1000;}
+        </style>
+    </head>
+    <body>
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a class="modal-trigger" href="#mlogin">Iniciar sesi&oacute;n</a></li>
+            <li><a class="modal-trigger" href="#msignin">Registrarse</a></li>
+            <li class="divider"></li>
+        </ul>
+        <div class="navbar-fixed">
+            <nav class="light-blue darken-4">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="brand-logo">&nbsp;&nbsp;Intelec</a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html"><i class="medium material-icons">home</i></a></li>
+                        <li><a href="lista-proyectos.html">Proyectos</a></li>
+                        <li><a href="badges.html">Productos</a></li>
+                        <li><a href="acercade.html">Sobre Nosotros</a></li>
+                        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Ingresar<i class="material-icons right">arrow_drop_down</i></a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li><a href="index.html"><i class="medium material-icons">home</i></a></li>
+                        <li><a href="lista-proyectos.html">Proyectos</a></li>
+                        <li><a href="badges.html">Productos</a></li>
+                        <li><a href="acercade.html">Sobre Nosotros</a></li>
+                        <li><a class="modal-trigger" href="#mlogin">Iniciar sesi&oacute;n</a></li>
+                        <li><a class="modal-trigger" href="#msignin">Registrarse</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <h3 class="blue-text darken-3">Nuestros Productos</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l4 m4 s12">
+                        <div class="center promo promo-example">
+                            <i class="large material-icons blue-text darken-4">fingerprint</i>
+                            <p class="promo-caption">Lectores Biometricos</p>
+                            <p class="light center flow-text text-justify">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components.</p>
+                        </div>
+                    </div>
+                    <div class="col l4 m4 s12">
+                        <div class="center promo promo-example">
+                            <i class="large material-icons blue-text darken-4">android</i>
+                            <p class="promo-caption">Dispositivos</p>
+                            <p class="light center flow-text text-justify">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components.</p>
+                        </div>
+                    </div>
+                    <div class="col l4 m4 s12">
+                        <div class="center promo promo-example">
+                            <i class="large material-icons blue-text darken-4">battery_charging_full</i>
+                            <p class="promo-caption">Baterias Solares</p>
+                            <p class="light center flow-text text-justify">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <footer class="page-footer blue-grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l4 s12">
+                    <h5 class="white-text">Instituto Tecnol&oacute;gico  de  Electr&oacute;nica</h5>
+                    <p class="grey-text text-lighten-4">Proyectos y productos tecnol&oacute;gicos.</p>
+                </div>
+                <div class="col l4 s12 center-align">
+                    <h5 class="white-text">Enlaces</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Twiter</a></li>
+                    </ul>
+                </div>
+                <div class="col l4 s12 center-align">
+                    <img src="img/logoUNAD.png" style="width: 300px;">
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright blue-grey darken-4">
+            <div class="container">
+                UNAD 2017
+                <a class="grey-text text-lighten-4 right" href="#!">&COPY; CURSO UML Grupo  12</a>
+            </div>
+        </div>
+    </footer>
+    <div id="mlogin" class="modal">
+        <div class="modal-content center-align">
+            <h3 class="blue-text darken-3">Iniciar sesi&oacute;n:</h3>
+            <div class="row">
+                <form class="col s12">               
+                    <div class="row">
+                        <div class="input-field col s12 m8 offset-m2 l6 offset-l3">
+                            <input id="usuario" type="text" class="validate">
+                            <label for="usuario">Usuario</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 m8 offset-m2 l6 offset-l3">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>      
+                    <div class="row">
+                        <div class="input-field col s12 m8 offset-m2 l6 offset-l3">
+                            <select id="perfil">
+                                <option value="1">Estandar</option>
+                                <option value="2">Administrador</option>
+                            </select>
+                            <label>Perfil</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn red">Cancelar</a>
+            <a id="usertype" href="main-user.html" class="modal-action waves-effect waves-green btn green">Ingresar</a>
+        </div>
+    </div>
+
+    <div id="msignin" class="modal">
+        <div class="modal-content center-align">
+            <h3 class="blue-text darken-3">Registrarse:</h3>
+            <div class="row">
+                <form class="col s12">      
+                    <div class="row">
+                        <div class="input-field col s12 m6 l6">
+                            <input id="nombres" type="text" class="validate">
+                            <label for="nombres">Nombres</label>
+                        </div>
+                        <div class="input-field col s12 m6 l6">
+                            <input id="apellidos" type="text" class="validate">
+                            <label for="apellidos">Apellidos</label>
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <div class="input-field col s12 m6 l6">
+                            <input id="usuario" type="text" class="validate">
+                            <label for="usuario">Usuario</label>
+                        </div>
+                        <div class="input-field col s12 m6 l6">
+                            <input id="correo" type="text" class="validate">
+                            <label for="correo">Correo</label>
+                        </div>                         
+                    </div>  
+                    <div class="row">
+                        <div class="input-field col s12 m6 l6">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Clave</label>
+                        </div>
+                        <div class="input-field col s12 m6 l6">
+                            <input id="password2" type="password" class="validate">
+                            <label for="password2">Repetir clave</label>
+                        </div>
+                    </div>                      
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn red">Cancelar</a>
+            <a href="main-user.html" class="modal-action waves-effect waves-green btn green">Continuar</a>
+        </div>
+    </div>
+    <div id="proinfo" class="modal">
+        <div class="modal-content center-align">
+            <h5 class="blue-text darken-3">Informacion del proyecto</h5>
+            <div class="row">
+                <div class="col s12"><label class="teal-text">GALERIA DE IMAGENES</label></div>
+                <div class="col s12">
+                    <div class="carousel">
+                        <a class="carousel-item" href="#one!"><img src="img/galer1.jpg"></a>
+                        <a class="carousel-item" href="#two!"><img src="img/galer2.jpg"></a>
+                        <a class="carousel-item" href="#three!"><img src="img/galer3.jpg"></a>
+                        <a class="carousel-item" href="#four!"><img src="img/galer4.jpg"></a>
+                        <a class="carousel-item" href="#five!"><img src="img/galer5.jpg"></a>
+                    </div>
+                </div>
+                <div class="col s12 center-align">
+                    <label class="teal-text">GALERIA DE IMAGENES</label>
+                    <p class="text-justify">
+                        "Estos proyectos son especiales para principiantes, con diagramas y 
+                        en la mayoría de los casos dibujos para comprender mejor la conexión
+                        de los componentes electrónicos.  Aunque también son útiles para 
+                        los técnicos de nivel más avanzado."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn green">OK</a>
+        </div>
+    </div>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>    
+    <script>
+        $(document).ready(function() {
+            $(".button-collapse").sideNav();
+            $('.modal').modal();
+            $('select').material_select();
+            $('.carousel').carousel();
+            $('.carousel').first().click();
+            $("#perfil").change(function() {
+                if ($(this).val() === "1") {
+                    $("#usertype").attr("href", "main-user.html");
+                } else {
+                    $("#usertype").attr("href", "main-admin.html");
+                }
+
+            });
+        });
+    </script>
+</body>
+</html>
