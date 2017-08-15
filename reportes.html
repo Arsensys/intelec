@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Inicio: Admin</title>
+        <title>Admin: Reportes</title>
         <link rel="icon" href="img/icon.png" sizes="32x32">
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -43,74 +43,67 @@
             </nav>
         </div>
         <div class="container">
+            <br/>
             <div class="row">
                 <div class="col s12 center-align">
-                    <h2 class="teal-text darken-3">Administraci&oacute;n</h2>
-                    <br/>
-                </div>
-                <div class="col l4 m4 s6">
-                    <div class="center promo promo-example">
-                        <a class="waves-effect waves-light"><i class="medium material-icons teal-text darken-3">dashboard</i></a>
-                        <p class="promo-caption">Proyectos</p>
-                        <p class="light text-justify hide-on-small-only">
-                            Gestione los diferentes proyectos de su emporesa.
-                            Puede agrgar, actualizar o eliminar datos sobre los proyectos.
-                        </p>
-                    </div>
-                </div>
-                <div class="col l4 m4 s6">
-                    <div class="center promo promo-example">
-                        <a class="waves-effect waves-light"><i class="medium material-icons teal-text darken-3">local_mall</i></a>
-                        <p class="promo-caption">Productos</p>
-                        <p class="light text-justify hide-on-small-only">
-                            Esta opci&oacute;n le permite Agregar, actualizar o eliminar
-                            los productos existentes y le permite alimentar su inventario.
-                        </p>
-                    </div>
-                </div>
-                <div class="col l4 m4 s6">
-                    <div class="center promo promo-example">
-                        <a class="waves-effect waves-light"><i class="medium material-icons teal-text darken-3">attach_money</i></a>
-                        <p class="promo-caption">Donaciones</p>
-                        <p class="light text-justify hide-on-small-only">
-                            Revise información estadistica de las donaciones por proyectos.
-                            Tambien puede usar el menu de reportes para obtener inforacón.
-                        </p>
-                    </div>
-                </div>
-                <div class="col s12 hide-on-small-only"><br/><br/><br/></div>
-                <div class="col l4 m4 s6">
-                    <div class="center promo promo-example">
-                        <a class="waves-effect waves-light"><i class="medium material-icons teal-text darken-3">card_giftcard</i></a>
-                        <p class="promo-caption">Reconocimientos</p>
-                        <p class="light text-justify hide-on-small-only">
-                            Gestione los diferentes proyectos de su emporesa.
-                            Puede agrgar, actualizar o eliminar datos sobre los proyectos.
-                        </p>
-                    </div>
-                </div>
-                <div class="col l4 m4 s6">
-                    <div class="center promo promo-example">
-                        <a class="waves-effect waves-light"><i class="medium material-icons teal-text darken-3">assessment</i></a>
-                        <p class="promo-caption">Reportes</p>
-                        <p class="light text-justify hide-on-small-only">
-                            Esta opci&oacute;n le permite Agregar, actualizar o eliminar
-                            los productos existentes y le permite alimentar su inventario.
-                        </p>
-                    </div>
-                </div>
-                <div class="col l4 m4 s6">
-                    <div class="center promo promo-example">
-                        <a class="waves-effect waves-light"><i class="medium material-icons teal-text darken-3">account_box</i></a>
-                        <p class="promo-caption">Usuarios   </p>
-                        <p class="light text-justify hide-on-small-only">
-                            Revise información estadistica de las donaciones por proyectos.
-                            Tambien puede usar el menu de reportes para obtener inforacón.
-                        </p>
-                    </div>
-                </div>
+                    <ul class="collapsible" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header active">
+                                <h4 class="teal-text darken-3">Reportes</h4>
+                            </div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="input-field col s12 m6 l6">
+                                        <select id="tipo">
+                                            <option value="1">Donaciones por proyectos</option>
+                                            <option value="2">Venta de productos</option>
+                                            <option value="3">Informe de Reconocimientos</option>
+                                            <option value="3">Mejores Donadores</option>
+                                            <option value="3">Informe de productos agotados</option>
+                                            <option value="3">Productos mas vendidos</option>
+                                        </select>
+                                        <label for="tipo">Tipo de Reporte</label>
+                                    </div>
+                                    <div class="input-field col s12 m6 l6">
+                                        <input id="apellidos" type="text" class="datepicker">
+                                        <label for="apellidos">Fecha Inicial</label>
+                                    </div>
+                                </div> 
+                                <div class="row">
+                                    <div class="input-field col s12 m6 l6">
+                                        <input id="apellidos" type="text" class="datepicker">
+                                        <label for="apellidos">Fecha Final</label>
+                                    </div>
+                                    <div class="input-field col s12 m6 l6">
+                                        <select id="modo">
+                                            <option value="1">Detallado</option>
+                                            <option value="2">Resumido</option>
+                                        </select>
+                                        <label for="modo">Modo reporte</label>
+                                    </div>                                                 
+                                </div>
+                                <div class="row">
+                                    <div class="col s12 center-align">
+                                        <a class="waves-effect waves-light btn green modal-trigger" href="#adminform"><i class="material-icons left">assessment</i>Generar reporte</a>                                     
+                                    </div>                                                                                 
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>                          
             </div>
         </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>  
+        <br/>  
+        <br/>  
+        <br/>  
+        <br/>  
+        <br/>  
         <footer class="page-footer blue-grey darken-3">
             <div class="container">
                 <div class="row">
@@ -145,6 +138,15 @@
                 $(".button-collapse").sideNav();
                 $('.modal').modal();
                 $('select').material_select();
+                $('.collapsible').collapsible();
+                $('.datepicker').pickadate({
+                    selectMonths: true, // Creates a dropdown to control month
+                    selectYears: 15, // Creates a dropdown of 15 years to control year,
+                    today: 'Today',
+                    clear: 'Clear',
+                    close: 'Ok',
+                    closeOnSelect: false // Close upon selecting a date,
+                });
             });
         </script>
     </body>
